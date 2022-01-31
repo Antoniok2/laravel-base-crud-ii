@@ -13,8 +13,8 @@
                 <a href="{{ route('detail', $comic -> id) }}">
                     {{ $comic -> title }}
                 </a>
-                <a href="{{ route('edit', $comic -> id) }}">EDIT</a>
-                <a href="{{ route('delete', $comic -> id) }}">DELETE</a>
+                <button class="edit"><a href="{{ route('edit', $comic -> id) }}">Edit</a></button>
+                <button class="delete"><a href="{{ route('delete', $comic -> id) }}">Delete</a></button>
             </li>
             
         @endforeach
